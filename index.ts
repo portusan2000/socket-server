@@ -1,9 +1,9 @@
-import Server from "./classes/server";
+import Server from './classes/server';
 import router from "./routes/router";
 import express from 'express';
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;;
 const port = server.port;
 
 // Middlewares
